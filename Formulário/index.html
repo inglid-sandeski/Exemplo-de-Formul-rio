@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Agendamento</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>AGENDAR ENCOMENDAS</h2>
+            <form id="clientForm">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="E-mail" required>
+                <input type="tel" id="phone" placeholder="Telefone" required>
+                <textarea id="note" placeholder="Observações" rows="3"></textarea>
+                <button type="submit">Enviar Dados</button>
+            </form>
+        </div>
+        <div class="table-container hidden">
+            <h2>Dados do Cliente</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th>
+                        <th>Observação</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+            <button class="btn-back" id="backButton">Voltar</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

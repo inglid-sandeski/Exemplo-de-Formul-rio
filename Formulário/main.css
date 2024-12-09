@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("bolo.jpeg");
+    background-position: center;
+    background-size: 80vh;
+    background-clip: border-box;
+    color: white
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: rgb(242, 199, 235);
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: all 0.5s ease;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ef75db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: rgb(164, 15, 139);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid gainsboro;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn-back {
+    margin-top: 20px;
+    background: #ef75db;;
+}
+
+.btn-back:hover {
+    background: rgb(164, 15, 139);
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    input, textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    th, td {
+        font-size: 10px;
+    }
+
+    input, textarea {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
